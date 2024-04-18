@@ -1,36 +1,48 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Todo Application
+This application allows you to manage your to-do lists efficiently.
 
-## Getting Started
+Getting Started
+To start using this application, follow the steps below:
 
-First, run the development server:
+Navigate to Todo Folder: Open your terminal or command prompt and change directory to the Todo folder using the following command:
+bash
+Copy code
+cd C:\Users\Meenakshi\Downloads\TODO\todo
+Install Dependencies: Run the following command to install all the necessary dependencies:
+css
+Copy code
+npm i
+Install Prisma: Ensure Prisma is installed on your device by following these steps:
+Install Prisma CLI as a development dependency:
+mathematica
+Copy code
+npm install -D prisma
+Initialize Prisma in your project:
+csharp
+Copy code
+npx prisma init
+Configure Database URL: Inside the todo/todo directory, create a file named .env and add your database URL. For example:
+makefile
+Copy code
+DATABASE_URL="postgresql://username:password@localhost:5432/todo?schema=public"
+Install Prisma Client: Install Prisma Client using the following command:
+css
+Copy code
+npm i @prisma/client
+Generate Prisma Client: Generate Prisma Client by running:
+Copy code
+npx prisma generate
+Apply Database Changes: Push your database changes to the database using:
+perl
+Copy code
+npx prisma db push
+Running the Application
+Once you have completed the setup, you can run the application using the following command:
 
-```bash
+arduino
+Copy code
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+This will start the application in development mode.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Additional Information
+For more information on using Prisma, visit Prisma Documentation.
